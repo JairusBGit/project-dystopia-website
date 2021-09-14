@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<link rel="icon" href="favicon.gif" type="image/gif">
+
+  <title>LINKS</title>
+  <style>
+  @import url("webfonts/pc_9800/stylesheet.css");
+
+@font-face {
+ 	font-family: 'fsex300';
+ 	src: url(file:///C|/Users/JairusB/Documents/downloaded%20sites/heckscaper.com/FSEX300.ttf);
+        font-family: "fsex300", "Courier", monospace;
+ }
+
+    body {
+	background-color:#000000;
+        color: #FFFFFF;
+        font-family: "fsex300", "Courier", monospace;
+        margin:0;
+	padding:0;
+	height:100%;
+    }
+
+    .spacebg {
+	width: 100%;
+	height: 100%;
+	background-repeat: repeat;
+	position:fixed;
+	top:0px;
+	left:0px;
+	background-image: url("loopsy.png");
+	will-change: transform, filter;
+	z-index:-1;
+	mix-blend-mode: screen;
+    }
+
+    .spacebg2 {
+	width: 100%;
+	height: 100%;
+	background-repeat: repeat;
+	position:fixed;
+	top:0px;
+	left:0px;
+	background-image: url("loopsy2.png");
+	will-change: transform, filter;
+	z-index:-2;
+	mix-blend-mode: screen;
+    }
+
+@keyframes backgroundScroll {
+0% {background-position:0px 0px; filter: opacity(100%);}
+50% {background-position:0px -234px; filter: opacity(50%);}
+100% {background-position: 0px -468px; filter: opacity(100%);}
+}
+
+@keyframes backgroundScroll2 {
+0% {background-position:0px 0px; filter: opacity(50%);}
+50% {background-position:0px -234px; filter: opacity(100%);}
+100% {background-position: 0px -468px; filter: opacity(50%);}
+}
+    a {
+        color: #00FFFF;
+    }
+    a:hover {
+        color: #FF00FF;
+    }
+    a.nav:hover {
+        color: #FF00FF;
+        -webkit-animation: huecycle 2s linear infinite;
+        animation: huecycle 2s linear infinite;
+    }
+
+    .main {
+	margin:32px;
+        width: 756px;
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .tableheader{
+	width:746px;
+	padding:3px 8px 3px 2px;
+	color:#FFFFFF;
+	font-family: 'pc 9800';
+	background-color:#1F22FF;
+	position:relative;
+	z-index:1;
+text-align:right; 
+    }
+
+    div.update {
+        width: 756px;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: left;
+    }
+    table {
+	border: 1px solid #0059ff;
+	box-shadow: 0px 0px 20px 5px #000000;
+	color: #FFFFFF;
+    }
+    td, th {
+        border: 1px solid #1900ff;
+        background-image: url("GRID.png");
+        padding: 8px;
+        text-align: justify;
+    }
+    @-webkit-keyframes huecycle {
+        from {
+            -webkit-filter: hue-rotate(0deg) saturate(200%);
+            filter: hue-rotate(0deg) saturate(200%);
+        }
+        to {
+            -webkit-filter: hue-rotate(360deg) saturate(200%);
+            filter: hue-rotate(360deg) saturate(200%);
+        }
+    }
+    @keyframes huecycle {
+        from {
+            -webkit-filter: hue-rotate(0deg) saturate(200%);
+            filter: hue-rotate(0deg) saturate(200%);
+        }
+        to {
+            -webkit-filter: hue-rotate(360deg) saturate(200%);
+            filter: hue-rotate(360deg) saturate(200%);
+        }
+    }
+    img.rainbow:hover {
+        -webkit-animation: huecycle 2s linear infinite;
+        animation: huecycle 2s linear infinite;
+    }
+    .imgbutton {
+        border: 2px solid #000000;
+	-webkit-filter: brightness(75%) grayscale(100%) sepia(100%) hue-rotate(0deg) saturate(0%) contrast(1.5);
+	filter: brightness(75%) grayscale(100%) sepia(100%) hue-rotate(130deg) saturate(0%) contrast(1.5);
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+    }
+    .imgbutton:hover {
+        border: 2px solid #00FFFF;
+	-webkit-filter: brightness(100%) grayscale(0%) sepia(0%) hue-rotate(360deg) saturate(100%) contrast(1);
+	filter: brightness(100%) grayscale(0%) sepia(0%) hue-rotate(360deg) saturate(100%) contrast(1);
+	-webkit-transition: 0.2s;
+	transition: 0.2s;
+    }
+    .iframe:hover {
+	height:333px;
+        -webkit-transition: 0.3s cubic-bezier(0,0,0.02,1);
+        transition: 0.3s cubic-bezier(0,0,0.02,1);
+        position:absolute;
+	border:2px solid #FF00FF;
+	z-index:100;
+	margin-top:-88px;
+	box-shadow: 0px 0px 20px 5px #000000;
+    }
+    .iframe {
+	height:38px;
+        -webkit-transition: 0.2s cubic-bezier(0,0,0.02,1);
+        transition: 0.2s cubic-bezier(0,0,0.02,1);
+        position:absolute;
+	float:right; 
+	border:2px solid #00FFFF;
+	margin-left:15px;
+	margin-top:38px;
+	z-index:100;
+	box-shadow: 0px 0px 0px 0px #000000;
+    }
+    h4 {
+        font-size: 10px;
+        line-height: 8px;
+    }
+  body,td,th {
+	font-family: "pc 9800";
+}
+  </style>
+</head>
+<body>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/8.6.7/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/8.6.7/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+
+<div class="spacebg" style="animation: backgroundScroll 15s linear infinite;"></div>
+<div class="spacebg2" style="animation: backgroundScroll2 25s linear infinite;"></div>
+<center>
+    <div class="main">
+      <p><img src="rbw.gif" width="600" height="1" alt=""/><br>
+      <a href="https://projectdystopia.web.app/" target="_blank"><img align="middle" src="PDYS.GIF" ><img src="rbw.gif" width="600" height="1" alt=""/></a><br>
+      </p>
+      <div class="update"><br>
+
+	</div>
+      <div class="tableheader">Links.</div>
+	<table>
+	  <tr>
+	    <td><a href="https://twitter.com/proj_dystopia" target="_blank"><img align="middle" class="imgbutton" src="twitter.png"></a></td>
+	    <td><font color="#19E0FF">TWITTER. //  </font>It's twitter. What else would it be?<font color="#FF00FF">&nbsp; </font><font color="#1943ff">STANDALONE SITE, OPENS IN NEW TAB</font>.</td>
+      </tr>
+	  <tr> </tr>
+	  <tr> </tr>
+</table>
+	<table>
+	  <tr>
+	    <td><a href="https://open.spotify.com/artist/2O2ZgaqjrP9a8mwXjAVt51" target="_blank"><img align="middle" class="imgbutton" src="spotify.png"></a></td>
+	    <td><font color="#19E0FF">SPOTIFY. // </font>It's spotify. What else would it be?<font color="#FF00FF">&nbsp; </font><font color="#1943ff">STANDALONE SITE, OPENS IN NEW TAB</font>.</td>
+      </tr>
+	  <tr> </tr>
+	  <tr> </tr>
+	  </table>
+	<table>
+	  <tr>
+	    <td><a href="https://soundcloud.com/project_dystopia" target="_blank"><img align="middle" class="imgbutton" src="scloud.png"></a></td>
+	    <td><font color="#19E0FF">SOUNDCLOUD. // </font>It's soundcloud. What else would it be?<font color="#FF00FF">&nbsp; </font><font color="#1943ff">STANDALONE SITE, OPENS IN NEW TAB</font>.</td>
+      </tr>
+	  <tr> </tr>
+	  <tr> </tr>
+	  </table>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+         <div align='center'>
+			
+          <div align='center'><a href='https://www.free-website-hit-counter.com'><img src='https://www.free-website-hit-counter.com/c.php?d=9&id=127722&s=39' border='0' alt='Free Website Hit Counter'></a><br / >
+          </div>
+
+			
+        </div><br>
+    </div></center>
+
